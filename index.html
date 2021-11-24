@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="contenedor active" id="contenedor">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+                <a href="#" class="logo">
+                    <i class="fab fa-youtube"></i> <span>YouTube</span>
+                </a>
+            </div>
+
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                <button class="mic"><i class="fas fa-microphone"></i></button>
+            </div>
+
+            <div class="botones-header">
+                <button><i class="fas fa-upload"></i></button>
+                <button><i class="fas fa-th"></i></button>
+                <button><i class="fas fa-bell"></i></button>
+                <a href="#" class="avatar"><img src="src/avatar.jpg" alt="user"></a>
+            </div>
+        </header>
+
+        <nav class="menu-lateral">
+            <a href="#" class="active"><i class="fas fa-home"></i> Principal</a>
+            <a href="#"><i class="far fa-compass"></i> Explorar</a>
+            <a href="#"><i class="fas fa-photo-video"></i> Suscripciones</a>
+
+            <hr>
+            <div class="tendencias" id="tendencias">
+                <a href="#"><i class="fas fa-film"></i> Biblioteca</a>
+                <a href="#"><i class="fas fa-history"></i> Historial</a>
+                <a href="#"><i class="fas fa-play"></i> Tus videos</a>
+                <a href="#"><i class="far fa-clock"></i> Ver más tarde</a>
+                <a href="#"><i class="far fa-thumbs-up"></i> Videos que me gustan</a>
+                <a href="#"><i class="far fa-folder-open"></i> Lista de reproducción 1</a>
+                <a href="#"><i class="far fa-folder-open"></i> Lista de reproducción 2</a>
+                <a href="#"><i class="far fa-folder-open"></i> Lista de reproducción 3</a>
+                <a href="#"><i class="far fa-folder-open"></i> Lista de reproducción 4</a>
+            </div>
+            <a href="#"><i class="fas fa-chevron-down" id="iconMas"></i><button id="mas"> Mostrar más</button></a>
+            <hr>
+
+            <h4>SUSCRIPCIONES</h4>
+
+            <a href="#"><img src="https://via.placeholder.com/50?text=Channel"><span class="channel">Canal 1</span></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Channel"><span class="channel">Canal 2</span></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Channel"><span class="channel">Canal 3</span></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Channel"><span class="channel">Canal 4</span></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Channel"><span class="channel">Canal 5</span></a>
+            <a href="#"><img src="https://via.placeholder.com/50?text=Channel"><span class="channel">Canal 6</span></a>
+
+            <hr>
+
+            <h4>MÁS DE YOUTUBE</h4>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube Premium</a>
+            <a href="#"><i class="fas fa-film"></i> Películas</a>
+            <a href="#"><i class="fas fa-gamepad"></i> Videojuegos</a>
+            <a href="#"><i class="fas fa-satellite-dish"></i> En vivo</a>
+            <a href="#"><i class="far fa-lightbulb"></i> Aprendizaje</a>
+            <a href="#"><i class="fas fa-trophy"></i> Deportes</a>
+
+            <hr>
+
+            <a href="#"><i class="fas fa-cog"></i> Configuración</a>
+            <a href="#"><i class="fas fa-flag"></i> Historial de denuncias</a>
+            <a href="#"><i class="far fa-question-circle"></i> Ayuda</a>
+            <a href="#"><i class="fas fa-comment"></i> Enviar comentarios></a>
+
+            <hr>
+
+            <ul>
+                <li><a href="#" class="footer">Acerca de</a></li>
+                <li><a href="#" class="footer">Prensa</a></li>
+                <li><a href="#" class="footer">Derechos de autor</a></li>
+                <li><a href="#" class="footer">Creadores</a></li>
+                <li><a href="#" class="footer">Anunciar</a></li>
+                <li><a href="#" class="footer">Desarrolladores</a></li>
+                <br>
+                <br>
+                <li><a href="#" class="footer">Condiciones</a></li>
+                <li><a href="#" class="footer">Privacidad</a></li>
+                <li><a href="#" class="footer">PrivacidadPolíticas y seguridad</a></li>
+                <br>
+                <br>
+                <li><p>Una réplica de la página principal de YouTube usando sólamente HTML, CSS y JavaScript. Para fines educativos únicamente.</p></li>
+                <li><p>A replic of YouTube's landing page using only HTML, CSS and JS. For educational pupose only</p></li>
+            </ul>
+            
+        </nav>
+
+        <main class="main">
+            <div class="topics">
+                <ul>
+                    <li class="active">HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>NodeJs</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Ruby</li>
+                    <li>Spring</li>
+                    <li>Hibernate</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+            <div class="grid-videos">
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 1 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 1 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">1.8 M de vistas | hace 4 días</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 2 | Este es un video de ejemplo sobre HTML</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 2 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">684,493 vistas | hace 1 mes </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="" class="channelImg">
+                        <h4 class="title">Mix: Mix de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel"></h5>
+                            <span class="info">Más contenido de este canal para ti</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 4 | Este es un video de ejemplo de Música</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 4 <i class="fas fa-music"></i></h5>
+                            <span class="info">6.2 M vistas | hace 3 meses </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video en Vivo de Ejemplo 5 | Este es un video en vivo de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 5 </h5>
+                            <span class="info">15,540 lo están viendo</span><br>
+                            <span class="live">EN VIVO</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 6 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 6 </h5>
+                            <span class="info">15,463 vistas | hace 2 horas </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 7 | Este es un video de ejemplo sobre CSS 3</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 7 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">234,688 vistas | hace 5 meses</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 8 | Este es un video de ejemplo sobre JavaScript</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 8 </h5>
+                            <span class="info">846,456 vistas | hace 2 meses </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video en Vivo de Ejemplo 9 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 9 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">345,698 vistas</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 10 | Este es un video de ejemplo sobre Música Rock</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 10 <i class="fas fa-music"></i></h5>
+                            <span class="info">3.4 M de vistas | hace 8 mes </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video en Vivo de Ejemplo 11 | Este es un video en vivo de ejemplo de Música
+                            Pop</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 11 <i class="fas fa-music"></i></h5>
+                            <span class="info">345,446 lo están viendo</span><br>
+                            <span class="live">EN VIVO</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 12 | Este es un video de ejemplo sobre NodeJs</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 12 </h5>
+                            <span class="info">312,020 vistas | hace 1 año </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <h3>Noticias</h3>
+
+            <div class="grid-videos">
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 1 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 1 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">1.8 M de vistas | hace 4 días</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 2 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 2 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">684,493 vistas | hace 1 mes </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 3 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 3 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">684,493 vistas | hace 1 mes </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 4 | Este es un video de ejemplo de Música</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 4 <i class="fas fa-music"></i></h5>
+                            <span class="info">6.2 M vistas | hace 3 meses </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-videos">
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 1 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 1 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">1.8 M de vistas | hace 4 días</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 2 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 2 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">684,493 vistas | hace 1 mes </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 3 | Este es un video de ejemplo</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 3 <i class="fas fa-check-circle"></i></h5>
+                            <span class="info">684,493 vistas | hace 1 mes </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="video">
+                    <img src="https://via.placeholder.com/500x280?text=Placeholder">
+                    <div class="description">
+                        <img src="https://via.placeholder.com/50?text=Channel" class="channelImg">
+                        <h4 class="title">Video de Ejemplo 4 | Este es un video de ejemplo de Música</h4>
+                        <div class="more">
+                            <h5 class="channel">Canal de Ejemplo 4 <i class="fas fa-music"></i></h5>
+                            <span class="info">6.2 M vistas | hace 3 meses </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e60b81ed7c.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

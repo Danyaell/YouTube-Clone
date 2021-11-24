@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(60px, 60px) auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    transition: all .3s ease;
+}
+
+.contenedor.active {
+    grid-template-columns: minmax(220px, 18%) auto;
+    transition: all .3s ease;
+}
+
+/* ---- ---- ---- HEADER ---- ---- ---- */
+.header {
+    grid-area: header;
+    padding: 0 20px 0 6px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
+}
+
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .contenedor-logo .boton-menu {
+    border: 1px solid #fff;
+    padding: 0px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+}
+
+.header .contenedor-logo button.boton-menu:hover {
+    background: #e5e5e5;
+    transition: all 1s;
+}
+
+.header .contenedor-logo button.boton-menu:active {
+    border: 1px solid #ccc;
+    background: #fff;
+    transition: all .1s;
+}
+
+
+.header .contenedor-logo .logo .fab {
+    color: #ff0000;
+    padding: 7px 0px 7px 5px;
+    font-size: 28px;
+    position: relative;
+    top: 3.4px;
+}
+
+.header .contenedor-logo .logo {
+    font-family: 'Oswald', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+}
+
+.header .barra-busqueda {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busqueda input {
+    min-width: 60%;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header .barra-busqueda button {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #545454;
+    background: #f8f8f8;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.header .barra-busqueda button:hover {
+    background-color: #f0f0f0;
+    transition: all .3s;
+}
+
+.header .barra-busqueda .mic {
+    margin-left: 5px;
+    padding: 0 13px;
+    border: none;
+    border-radius: 100px;
+    background: #f8f8f8;
+    transition: all .3s;
+}
+
+.header .botones-header {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+}
+
+.header .botones-header button {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 100px;
+    color: #828282;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.header .botones-header button:hover {
+    background: #e7e7e7;
+    transition: all .3s;
+}
+
+.header .botones-header .avatar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.header .botones-header .avatar img {
+    vertical-align: top;
+    width: 100%;
+    border-radius: 100px;
+}
+
+/* ---- ---- ---- MENU LATERAL ---- ---- ---- */
+
+.menu-lateral {
+    grid-area: menu;
+    background: #fff;
+    overflow: hidden;
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 13px;
+    color: #000;
+    min-width: 800px;
+}
+
+.menu-lateral a:hover {
+    background: #e5e5e5;
+}
+
+.menu-lateral a.active {
+    background: #e5e5e5;
+    font-weight: bold;
+}
+
+.contenedor.active .menu-lateral ul {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.contenedor.active .menu-lateral ul li {
+    display: inline-block;
+}
+
+.contenedor .menu-lateral ul {
+    display: none;
+}
+
+.menu-lateral a.footer {
+    display: inline;
+    padding: 0px;
+    padding-left: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #545454;
+}
+
+.menu-lateral ul li p{
+    font-size: 11px;
+    color: #828282;
+}
+
+.menu-lateral .fas {
+    color: #606060;
+    margin-right: 20px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-lateral .far {
+    color: #606060;
+    margin-right: 20px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-lateral .fab {
+    color: #606060;
+    margin-right: 20px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-lateral a.active .fas {
+    color:#ff0000;
+}
+
+.menu-lateral div.tendencias {
+    height: 220px;
+    overflow: hidden;
+}
+
+.menu-lateral div.tendencias.active{
+    height: max-content;
+}
+
+.menu-lateral button#mas {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.menu-lateral hr {
+    margin: 6px 0;
+    border: .2px solid #e7e7e7;
+}
+
+.menu-lateral h4 {
+    padding: 7px 20px 0px 65px;
+    font-size: 14px;
+    color: #545454;
+}
+
+.menu-lateral img {
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    margin-right: 20px;
+    top: 7px;
+    position: relative;
+}
+
+.menu-lateral span.channel {
+    text-align: center;
+}
+
+/* ---- ---- ---- CONTENIDO ---- ---- ---- */
+
+.main {
+    grid-area: contenido;
+    background: #f8f8f8;
+}
+
+.topics {
+    width: 100%;
+    max-height: 45px;
+    padding-left: 20px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+    background: #fff;
+}
+
+.topics ul {
+    list-style-type: none;
+    cursor: context-menu;
+}
+
+.topics ul li {
+    display: inline-block;
+    margin: 8px 4px;
+    padding: 4px 10px 5px;
+    font-size: 12.5px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.topics ul li:hover {
+    background: #dfdfdf;
+    transition: all .3s;
+}
+
+.topics ul li.active {
+    background: #000;
+    border: #000;
+    color: #fff;
+}
+
+.main h3 {
+    padding: 35px 20px 15px;
+}
+
+.main .grid-videos {
+    padding: 20px 20px 50px;
+    display: grid;
+    grid-gap: 40px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 4px solid #dfdfdf;
+}
+
+.main .grid-videos a.video {
+    width: 100%;
+}
+
+.main .grid-videos a.video img {
+    width: 100%;
+}
+
+.main .grid-videos a.video div.description{
+    margin-top: 5px;
+    display: grid;
+    grid-gap: 5px 15px;
+    grid-template-columns: 35px auto;
+    grid-template-rows: 35px 35px;
+    grid-template-areas: "channelImg title"
+                         "empty more";
+}
+
+.main .grid-videos a.video div.description img.channelImg {
+    grid-area: channelImg;
+    border-radius: 100px;
+}
+
+.main .grid-videos a.video div.description h4.title {
+    grid-area: title;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.main .grid-videos a.video div.description div.more {
+    grid-area: more;
+    color: #606060;
+}
+
+.main .grid-videos a.video div.description div.more h5.channel {
+    font-size: 11px;
+}
+
+.main .grid-videos a.video div.description div.more h5.channel:hover {
+    color: #000;
+}
+
+.main .grid-videos a.video div.description div.more span.info {
+    font-size: 12px;
+}
+
+.main .grid-videos a.video div.description div.more span.live {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 6px;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+/* ---- ---- ---- MEDIAQUERIES ---- ---- ---- */
+@media screen and (max-width: 1150px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-rows: auto;
+    }
+
+    .header {
+        padding: 20px 20px 0;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        grid-gap: 8px;
+        grid-template-areas: "logo iconos"
+                             "busqueda busqueda";
+    }
+
+    .header .barra-busqueda input {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .header .barra-busqueda {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
